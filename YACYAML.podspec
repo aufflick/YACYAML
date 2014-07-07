@@ -9,4 +9,5 @@ Pod::Spec.new do |spec|
   spec.source_files = 'YACYAML/**/*.{h,m}'
   spec.requires_arc = true
   spec.dependency 'LibYAML', '~> 0.1.4'
+  spec.libraries = 'resolv' # needed for the base 64 routines - should remove this dependency...
 end
